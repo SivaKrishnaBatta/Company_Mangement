@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './auth/login-page/login-page.component';
 import { HeaderComponent } from './dashboard/layouts/dashboard-home/header/header.component';
+import { SignupPageComponent } from './auth/signup-page/signup-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,11 +14,14 @@ import { HeaderComponent } from './dashboard/layouts/dashboard-home/header/heade
     AppComponent,
     LoginPageComponent,
     HeaderComponent,
+    SignupPageComponent,
+   
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
