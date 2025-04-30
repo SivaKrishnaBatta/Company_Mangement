@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 export interface User{
   id?:number;
@@ -16,7 +16,15 @@ export interface User{
 export class AuthService {
   private ApiUrl = "http://localhost:3000/users";
 
+
+  public subject= new Subject()
+
   constructor(private http:HttpClient) {  }
+
+
+  sendData(data: any){
+    this.subject.next(data);
+  }
 
   addUser(user:User):Observable<User>{
    return this.http.post<User>(this.ApiUrl,user);
