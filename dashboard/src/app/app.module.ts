@@ -7,6 +7,7 @@ import { LoginPageComponent } from './auth/login-page/login-page.component';
 import { HeaderComponent } from './dashboard/layouts/dashboard-home/header/header.component';
 import { SignupPageComponent } from './auth/signup-page/signup-page.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
