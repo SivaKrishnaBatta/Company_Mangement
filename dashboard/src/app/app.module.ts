@@ -16,8 +16,13 @@ import {HttpClientModule} from '@angular/common/http';
     LoginPageComponent,
     HeaderComponent,
     SignupPageComponent,
-   
-    
+    SideNavComponent,
+    MainComponent,
+    TopWidgetsComponent,
+    SalesByMonthComponent,
+    SalesByCategoryComponent,
+    LastTransctionsComponent,
+    TopThreeProductsComponent,
   ],
   imports: [
     BrowserModule,
